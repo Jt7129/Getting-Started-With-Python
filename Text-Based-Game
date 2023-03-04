@@ -1,0 +1,178 @@
+import time
+
+def game():
+
+      end = 1
+      print("Welcome to Lost in the Pyramids")
+      input("Press Enter to Continue: ")
+      time.sleep(1)
+      print("You wake up, you see nothing but darkness!\n"
+            "1:Nothing\n"
+            "2:Look for a way out\n"
+            "3:Press this mysterious looking button")
+      op1 = input("Select a number and press enter to continue: ")
+
+      if op1 == "1":
+            time.sleep(1)
+            print("You Died from starving...")
+
+
+      elif op1 == "2":
+            print("You find this door...")
+            time.sleep(1)
+            print("You push it open...")
+            time.sleep(1)
+            print("You are now in a room with 3 passages ways\n"
+                  "which one do you take:\n"
+                  "1: The left one\n"
+                  "2: The middle one\n"
+                  "3: The right one")
+
+            oppassasge = input("Select a number then press enter: ")
+
+            if oppassasge == "1":
+                  print("You went down the left passage...")
+                  time.sleep(1)
+                  print("You keep going...")
+                  time.sleep(1)
+                  print("You find a exit to outside...")
+                  time.sleep(1)
+                  print("In a forest???")
+                  time.sleep(1)
+                  print("What do you do?")
+                  time.sleep(1)
+                  print("1: Go explore the forest")
+                  time.sleep(1)
+                  print("2: Stay in the pyramid")
+                  time.sleep(1)
+                  print("3: Go out and climb the pyramid")
+                  forest = input("Select a number and then press enter ")
+
+                  if forest == "1":
+                        print("You decided to explore the forest")
+                        time.sleep(1)
+                        print("You keep exploring")
+                        time.sleep(1)
+                        print("Night is starting to set in!")
+                        print("1: Sleep in a tree")
+                        time.sleep(1)
+                        print("2: Go out and hunt for food")
+                        forestop1 = input("Select a number and then press enter ")
+
+                        if forestop1 == "1":
+                              print("You decided to climb a tree and sleep there")
+                              print("You Sleep through the night.")
+                              print("Time Before you wake up: 5")
+                              time.sleep(1)
+                              print("Time Before you wake up: 4")
+                              time.sleep(1)
+                              print("Time Before you wake up: 3")
+                              time.sleep(1)
+                              print("Time Before you wake up: 2")
+                              time.sleep(1)
+                              print("Time Before you wake up: 1")
+                              time.sleep(1)
+                              print("You slept through the night and now feel hungry")
+                              time.sleep(1)
+                              print("But wait...")
+                              time.sleep(2)
+                              print("Something is happening...")
+                              time.sleep(3)
+                              print("You Win!!!")
+
+                        elif forestop1 == "2":
+                              print("You decided to hunt for food")
+                              time.sleep(1)
+                              print("You found a dead bunny that hasn\'t been eaten yet!")
+                              time.sleep(1)
+                              print("1: Cook it and eat it")
+                              time.sleep(1)
+                              print("2: Go look for something different.")
+                              time.sleep(1)
+                              eat = input("Select a number then press enter: ")
+                              if eat == "1":
+                                    print("You started a fire and cooked the bunny")
+                                    time.sleep(1)
+                                    print("As you eat the bunny your stomach starts to hurt")
+                                    time.sleep(1)
+                                    print("The rabbit was infected")
+                                    print("You Died")
+                              if eat == "2":
+                                    print("After a bit of searching, you find a apple tree")
+                                    time.sleep(1)
+                                    print("1: Eat the healthy apple")
+                                    time.sleep(1)
+                                    print("2: Don't eat")
+                                    eatapple = input("Select a number then press enter: ")
+                                    if eatapple == "1":
+                                          print("You ate the apple")
+                                          time.sleep(1)
+                                          print("Something is happening...")
+                                          time.sleep(3)
+                                          print("You Win!!!")
+
+                                    elif eatapple == "2":
+                                          print("You didn\'t eat the apple...")
+                                          print("You Died from starvation")
+
+
+
+
+                  elif forest == "2":
+                        print("You decided to stay in the pyramid")
+                        time.sleep(1)
+                        print("You got bored and died from starvation")
+
+                  elif forest == "3":
+                        print("You decided to climb the pyramid")
+                        time.sleep(1)
+                        print("You got tired and tumbled down the pyramid")
+                        time.sleep(1)
+                        print("You Died")
+
+
+
+
+            elif oppassasge == "2":
+                  print("You went down the middle passage...")
+                  time.sleep(1)
+                  print("You found a chest of treasure!!!")
+                  time.sleep(1)
+                  print("You have no way to enjoy the treasure with no way out")
+                  print("You died")
+
+            elif oppassasge == "3":
+                  print("You went down the right passage...")
+                  time.sleep(1)
+                  print("It\'s a dead end...")
+                  print("You died")
+
+
+      elif op1 == "3":
+            time.sleep(1)
+            print("You Press the button")
+            time.sleep(1)
+            print("A trapdoor opens beneath you")
+            time.sleep(1)
+            print("you fall into a long hallway lit with torches")
+            input("Press enter to continue: ")
+            print("You approach a dark room.\n"
+                  "1: Take a torch and explore\n"
+                  "2: Do nothing")
+            op12 = input("Select a number and press enter: ")
+
+            if op12 == "1":
+                  print("you decided to explore...")
+                  time.sleep(1)
+                  print("You got eaten by a tiger!!!")
+                  print("You died")
+            elif op12 == "2":
+                  print("You sit in this well lit hallway")
+                  time.sleep(1)
+                  print("You start to black out...")
+                  time.sleep(1)
+                  print("You have died from starving")
+                  print("You died")
+
+
+game()
